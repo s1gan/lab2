@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab1</title>
+    <title>task4</title>
 </head>
 <body>
     <script>
 function isPrime(num) {
+
   if (num <= 1) return false;
   for (let i = 2; i * i <= num; i++) {
     if (num % i === 0) return false;
@@ -15,9 +16,9 @@ function isPrime(num) {
   return true;
 }
 
-for (let i = 1; i <= 100; i++) {
+for (let i = 1; i <= 50; i++) {
   if (isPrime(i)) {
-    console.log(i);
+    console.log(i + " - Prime");
   }
 }
     </script>

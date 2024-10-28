@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task5</title>
+</head>
+<body>
+    <script>
+function drawTriangle(height) {
+  for (let i = 1; i <= height; i++) {
+    let row = '';
+    for (let j = height - i; j > 0; j--) {
+      row += ' ';
+    }
+    for (let k = 1; k <= 2 * i - 1; k++) {
+      row += '*';
+    }
+    console.log(row);
+  }
+}
+
+const height = parseInt(prompt("Введіть висоту трикутника:"));
+
+drawTriangle(height);
+    </script>
+</body>
+</html>
