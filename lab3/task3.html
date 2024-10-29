@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3</title>
+</head>
+<body>
+    <script>
+//Функція, яка приймає масив чисел і функцію зворотного виклику для фільтрації всіх парних чисел.
+function filterEvenNumbers(callback) {
+  const inputString = prompt("Введіть числа через кому:");
+  const numbers = inputString.split(',').map(Number);
+
+  const evenNumbers = [];
+  for (let number of numbers) {
+    if (callback(number)) {
+      evenNumbers.push(number);
+    }
+  }
+
+  return evenNumbers;
+}
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+
+const evenNumbers = filterEvenNumbers(isEven);
+console.log("Парні числа:", evenNumbers);
+    </script>
+</body>
+</html>

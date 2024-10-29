@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    <script>
+//Функція, яка приймає два числа і повертає повідомлення, яке з них більше.
+function findBiggerNumber() {
+  const num1 = Number(prompt("Введіть перше число:"));
+  const num2 = Number(prompt("Введіть друге число:"));
+
+  if (num1 > num2) {
+    return `Число ${num1} більше за ${num2}`;
+  } else if (num2 > num1) {
+    return `Число ${num2} більше за ${num1}`;
+  } else {
+    return `Числа ${num1} і ${num2} рівні`;
+  }
+}
+
+const result = findBiggerNumber();
+console.log(result);
+    </script>
+</body>
+</html>
